@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AmazonLex</title>
+    <meta name="author" content="lafranch">
+    <meta name="description" content="Lex Runtime example from the browser.">
+    <meta name="keywords" content="Amazon Lex, SDK, Runtime, Browser, JavaScript">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
+<script src="app.js"></script>
+<script src="credentials.js"></script>
+<script>
+    var settings = {
+        awsCredentials: window.awsCredentials,
+        awsRegion: "us-west-2",
+        pollyVoiceId: "Marlene",
+        cacheSpeech: true
+    };
+
+    window.bot = new Bot(settings);
+    window.bot.speak("Hallo, wie geht es dir?");
+</script>
+</body>
+
+</html>

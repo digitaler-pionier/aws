@@ -1,0 +1,12 @@
+{
+    "name": "tobiasoberrauch/aws",
+    "authors": [
+        {
+            "name": "Tobias Oberrauch",
+            "email": "t.oberrauch@simplicity.ag"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.36"
+    }
+}
